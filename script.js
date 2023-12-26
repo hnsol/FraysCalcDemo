@@ -1,3 +1,5 @@
+document.getElementById('quantity').addEventListener('input', calculate);
+
 function calculate() {
     var quantity = document.getElementById('quantity').value;
     document.getElementById('oil').textContent = (10 / 50 * quantity).toFixed(2);
