@@ -4,13 +4,29 @@ body {
     padding-top: 20px;
 }
 
-input, button {
+/* 入力フィールドとボタンを含むコンテナ */
+.form-container {
+    text-align: center;
+    display: inline-block; /* インラインブロック要素にする */
+}
+
+input#quantity {
+    width: auto; /* 入力フィールドの幅を自動に設定 */
+    margin: 10px 5px 10px 0; /* 右に少しマージンを設定 */
+    padding: 10px;
+    font-size: 24px; /* フォントサイズを24pxに設定 */
+    display: inline-block; /* インラインブロック要素にする */
+    text-align: center;
+}
+
+button {
     margin: 10px 0;
     padding: 10px;
-    font-size: 16px;
+    font-size: 24px; /* フォントサイズを24pxに設定 */
+    display: inline-block; /* インラインブロック要素にする */
 }
 
 #results p {
-    font-size: 18px;
+    font-size: 24px; /* 結果表示部分のフォントサイズを24pxに設定 */
 }
 
