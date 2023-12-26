@@ -8,5 +8,8 @@ function calculate() {
     document.getElementById('flour').textContent = (40 / 50 * quantity).toFixed(2);
     document.getElementById('sugar').textContent = (10 / 50 * quantity).toFixed(2);
     document.getElementById('salt').textContent = (0.1 / 50 * quantity).toFixed(2);
+
+    document.getElementById('materialsTitle').textContent = quantity + '個に対する材料';
+
 }
 
