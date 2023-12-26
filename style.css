@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    font-size: 48px; /* フォントサイズを設定 */
     padding-top: 20px;
     background-color: #f5f5f5; /* 背景色をわずかにグレーに */
     color: #333333; /* テキストの色を少しグレーに */}
@@ -15,7 +16,7 @@ input#quantity {
     width: auto; /* 入力フィールドの幅を自動に設定 */
     margin: 10px 5px 10px 0; /* 右に少しマージンを設定 */
     padding: 10px;
-    font-size: 24px; /* フォントサイズを24pxに設定 */
+    font-size: 48px; /* フォントサイズを設定 */
     display: inline-block; /* インラインブロック要素にする */
     text-align: center;
 }
@@ -23,11 +24,11 @@ input#quantity {
 button {
     margin: 10px 0;
     padding: 10px;
-    font-size: 24px; /* フォントサイズを24pxに設定 */
+    font-size: 48px; /* フォントサイズを設定 */
     display: inline-block; /* インラインブロック要素にする */
 }
 
 #results p {
-    font-size: 24px; /* 結果表示部分のフォントサイズを24pxに設定 */
+    font-size: 48px; /* 結果表示部分のフォントサイズを24pxに設定 */
 }
 
