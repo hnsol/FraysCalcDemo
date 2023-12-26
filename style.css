@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding-top: 20px;
-}
+    background-color: #f5f5f5; /* 背景色をわずかにグレーに */
+    color: #333333; /* テキストの色を少しグレーに */}
 
 /* 入力フィールドとボタンを含むコンテナ */
 .form-container {
