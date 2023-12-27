@@ -27,14 +27,18 @@ body {
 
 
 .input-container {
-    background-color: gray; /* 白色の背景 */
-    padding: 20px;
-    margin: 20px auto;
+    display: flex; /* Flexboxを使用して横並びに配置 */
+    justify-content: center; /* 中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    background-color: gray;
+    padding: 24px;
     width: 100%;
+    margin: 0px auto; /* #results と同じ外側マージンを適用 */
 }
 
 input#quantity {
-    width: 80%; /* 入力フィールドの幅 */
+    width: calc(80% - 205px + 32px + 8px);
+    margin-right: 0px; /* ボタンとの間隔 */
     padding: 24px;
     font-size: 64px; /* 大きなフォントサイズ */
     text-align: center;
@@ -48,15 +52,17 @@ input#quantity:focus {
 }
 
 button {
-    width: 80%; 
-    padding: 16px;
-    font-size: 42px;
-    background-color: black; /* Gray背景 */
+    width: 112px; /* ボタンの幅と高さを同じにして円形にする */
+    height: 112px;
+    padding: 0; /* パディングを調整 */
+    border-radius: 50%; /* 円形にする */
+    font-size: 64px; /* テキストサイズを調整 */
+    line-height: 112px; /* テキストを垂直中央に配置 */
+    text-align: center;
+    background-color: orange;
     color: white; /* 白色のテキスト */
     border: none;
-    border-radius: 32px;
-    margin-top: 10px;
-    margin-bottom: 48px; /* ボタンの下に20pxの隙間を追加 */
+    margin: 10px 72px 10px 32px; /* 両側のマージンを調整 */
 }
 
 #results {
