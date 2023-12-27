@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    font-size: 48px; /* 大きなフォントサイズ */
     background-color: #f5f5f5; /* 軽いグレーの背景 */
     color: #333333; /* ややグレーのテキスト */
     text-align: center;
@@ -17,9 +18,9 @@ body {
 }
 
 input#quantity {
-    width: 100%; /* 入力フィールドの幅 */
+    width: 80%; /* 入力フィールドの幅 */
     padding: 15px;
-    font-size: 24px; /* 大きなフォントサイズ */
+    font-size: 48px; /* 大きなフォントサイズ */
     text-align: center;
     border: 1px solid #ccc; /* 薄い境界線 */
     border-radius: 5px; /* 角の丸み */
@@ -27,9 +28,9 @@ input#quantity {
 }
 
 button {
-    width: 100%;
+    width: 80%;
     padding: 15px;
-    font-size: 24px;
+    font-size: 48px;
     background-color: #333333; /* 緑色の背景 */
     color: white; /* 白色のテキスト */
     border: none;
@@ -47,7 +48,7 @@ button {
 }
 
 #results p {
-    font-size: 20px; /* 結果のフォントサイズ */
+    font-size: 48px; /* 結果のフォントサイズ */
     margin: 5px 0; /* 間隔 */
 }
 
