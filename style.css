@@ -39,6 +39,10 @@ input#quantity {
     box-sizing: border-box; /* ボックスサイズを設定 */
 }
 
+input#quantity:focus {
+    outline: 2px solid gray; /* 太さを2pxに設定 */
+}
+
 button {
     width: 80%; 
     padding: 16px;
