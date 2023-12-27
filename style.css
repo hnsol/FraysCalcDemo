@@ -59,10 +59,14 @@ button {
     font-size: 64px; /* テキストサイズを調整 */
     line-height: 112px; /* テキストを垂直中央に配置 */
     text-align: center;
-    background-color: orange;
+    background-color: darkorange;
     color: white; /* 白色のテキスト */
     border: none;
     margin: 10px 72px 10px 32px; /* 両側のマージンを調整 */
+}
+
+button:active {
+    background-color: orange; /* 明るいオレンジ色 */
 }
 
 #results {
