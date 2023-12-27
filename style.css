@@ -34,7 +34,7 @@ input#quantity {
     padding: 24px;
     font-size: 64px; /* 大きなフォントサイズ */
     text-align: center;
-    border: 1px solid #ccc; /* 薄い境界線 */
+    border: none;
     border-radius: 5px; /* 角の丸み */
     box-sizing: border-box; /* ボックスサイズを設定 */
 }
