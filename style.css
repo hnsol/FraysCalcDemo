@@ -1,34 +1,53 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* 軽いグレーの背景 */
+    color: #333333; /* ややグレーのテキスト */
     text-align: center;
-    font-size: 48px; /* フォントサイズを設定 */
-    padding-top: 20px;
-    background-color: #f5f5f5; /* 背景色をわずかにグレーに */
-    color: #333333; /* テキストの色を少しグレーに */}
+    margin: 0;
+    padding: 20px;
+}
 
-/* 入力フィールドとボタンを含むコンテナ */
-.form-container {
-    text-align: center;
-    display: inline-block; /* インラインブロック要素にする */
+.input-container {
+    background-color: #ffffff; /* 白色の背景 */
+    padding: 20px;
+    border-radius: 10px; /* 角の丸み */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* シャドウを追加 */
+    margin: 20px auto;
+    width: 80%;
 }
 
 input#quantity {
-    width: auto; /* 入力フィールドの幅を自動に設定 */
-    margin: 10px 5px 10px 0; /* 右に少しマージンを設定 */
-    padding: 10px;
-    font-size: 48px; /* フォントサイズを設定 */
-    display: inline-block; /* インラインブロック要素にする */
+    width: 100%; /* 入力フィールドの幅 */
+    padding: 15px;
+    font-size: 24px; /* 大きなフォントサイズ */
     text-align: center;
+    border: 1px solid #ccc; /* 薄い境界線 */
+    border-radius: 5px; /* 角の丸み */
+    box-sizing: border-box; /* ボックスサイズを設定 */
 }
 
 button {
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 48px; /* フォントサイズを設定 */
-    display: inline-block; /* インラインブロック要素にする */
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    background-color: #333333; /* 緑色の背景 */
+    color: white; /* 白色のテキスト */
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#results {
+    background-color: #ffffff; /* 白色の背景 */
+    padding: 20px;
+    border-radius: 10px; /* 角の丸み */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* シャドウを追加 */
+    margin: 30px auto;
+    width: 80%;
 }
 
 #results p {
-    font-size: 48px; /* 結果表示部分のフォントサイズを24pxに設定 */
+    font-size: 20px; /* 結果のフォントサイズ */
+    margin: 5px 0; /* 間隔 */
 }
 
