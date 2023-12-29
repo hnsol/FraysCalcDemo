@@ -1,67 +1,81 @@
 body {
-    font-family: Arial, sans-serif;
-    font-size: 48px; 
-    background-color: lightgray; 
-    color: dimgray; 
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* スペースを最大限利用 */
+    height: 100vh; /* ビューポートの高さに合わせる */
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    font-family: San Francisco, sans-serif;
+    font-size: 48px;
+    color: dimgray;
+    text-align: center;
+    background-color: lightgray; 
 }
 
-h1 {
-    font-size: 52px; /* h1ヘッダのフォントサイズを指定 */
-    color: black;
-    margin: 0.5em 0; /* 上下のマージンを設定 */
+.bottom-container {
+    position:fixed;
+    bottom: 0; /* 画面の最下部に固定 */
+    left: 0;
+    right: 0;
+    background-color: lightgray; /* 背景色を設定 */
 }
 
-h2 {
-    font-size: 42px; /* h2ヘッダのフォントサイズを指定 */
+#materialsTitle {
+    font-size: 42px;
     color: gray;
     margin: 0.5em 0;
 }
 
 .input-container {
-    background-color: white; /* 白色の背景 */
-    padding: 20px;
-    border-radius: 20px; /* 角の丸み */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* シャドウを追加 */
-    margin: 20px auto;
+    display: flex; /* Flexboxを使用して横並びに配置 */
+    justify-content: center; /* 中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    background-color: gray;
+    padding: 32px;
     width: 100%;
+    margin: 0px auto; /* #results と同じ外側マージンを適用 */
 }
 
 input#quantity {
-    width: 80%; /* 入力フィールドの幅 */
+    width: calc(80% - 200px + 32px + 8px); /* NOTE:手調整 */
+    margin-right: 0px; /* ボタンとの間隔 */
     padding: 24px;
-    font-size: 64px; /* 大きなフォントサイズ */
+    font-size: 64px;
     text-align: center;
     border: none;
-    border-radius: 5px; /* 角の丸み */
+    border-radius: 4px;
     box-sizing: border-box; /* ボックスサイズを設定 */
 }
 
 input#quantity:focus {
-    outline: 2px solid gray; /* 太さを2pxに設定 */
+    outline: 4px solid gray;
 }
 
 button {
-    width: 80%; 
-    padding: 16px;
-    font-size: 42px;
-    background-color: dimgray; /* Gray背景 */
+    width: 112px; /* ボタンの幅と高さを同じにして円形にする */
+    height: 112px;
+    padding: 0;
+    border-radius: 50%; /* 円形にする */
+    font-size: 64px;
+    line-height: 112px; /* テキストを垂直中央に配置 */
+    text-align: center;
+    background-color: darkorange;
     color: white; /* 白色のテキスト */
     border: none;
-    border-radius: 32px;
-    margin-top: 10px;
-    margin-bottom: 48px; /* ボタンの下に20pxの隙間を追加 */
+    margin: 10px 72px 10px 32px; /* NOTE:手調整 */
+}
+
+button:active {
+    background-color: orange; /* 明るいオレンジ色 */
 }
 
 #results {
     background-color: white; /* 白色の背景 */
-    padding: 20px;
-    border-radius: 5px; /* 角の丸み */
+    padding: 32px;
+    border-radius: 16px; /* 角の丸み */
     box-sizing: border-box; /* ボックスサイズを設定 */
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* シャドウを追加 */
-    margin: 30px auto;
+    margin: 32px auto;
     width: 80%;
 }
 
@@ -69,4 +83,5 @@ button {
     font-size: 48px; /* 結果のフォントサイズ */
     margin: 8px 0; /* 間隔 */
 }
+
 
